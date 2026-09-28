@@ -1,13 +1,27 @@
-# CollatzProject
+# Formalizing the Enveloping C*-Algebra in Lean 4
 
-## GitHub configuration
+This repository contains a Lean 4 formalization of:
 
-To set up your new GitHub repository, follow these steps:
+1. The GNS construction for a unital *-algebra over ℂ.
+2. The C*-identity for the maximal seminorm on a *-algebra.
+3. The enveloping C*-algebra `C*(A)` and its universal property.
 
-* Under your repository name, click **Settings**.
-* In the **Actions** section of the sidebar, click "General".
-* Check the box **Allow GitHub Actions to create and approve pull requests**.
-* Click the **Pages** section of the settings sidebar.
-* In the **Source** dropdown menu, select "GitHub Actions".
+## Main results
 
-After following the steps above, you can remove this section from the README file.
+All results are in `Collatz/State_A.lean`:
+
+- `AlgState.gns_cyclic_inner` — the fundamental identity of the GNS construction.
+- `AlgState.maximalSeminorm_cstar` — the C*-identity for the maximal seminorm.
+- `AlgState.CStarAlgebra (envelopingCStar A)` — the C*-algebra structure on the completion of `A`.
+- `AlgState.envelopingCStar_universal` — the universal property of the enveloping C*-algebra.
+
+## Requirements
+
+- Lean 4: `v4.35.0-rc3`
+- Mathlib: `v4.35.0-rc3`
+
+## Build
+
+```bash
+lake exe cache get
+lake build Collatz.State_A
