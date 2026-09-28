@@ -1,0 +1,8 @@
+/.lake
+/build
+*.olean
+*.ilean
+*.trace
+*.rar
+.DS_Store
+Thumbs.db
