@@ -1,7 +1,0 @@
-
-## Notes
-
-The universal property is proved under the hypothesis that the
-*-homomorphism φ : A → B is continuous. Removing this hypothesis
-requires the squeeze theorem for -homomorphisms between C-algebras,
-which is left for future work.
